@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     url: 'https://lumen.netlify.com',
-    title: 'Blog by John Doe',
-    subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    title: 'Blog by Maaz Syed Adeeb',
+    subtitle: 'Learner. Experimentalist. Code, food and football never cease to thrill me.',
     copyright: '© All rights reserved.',
-    disqusShortname: '',
+    disqusShortname: 'maazadeeb',
     menu: [
       {
         label: 'Articles',
@@ -20,13 +20,14 @@ module.exports = {
       }
     ],
     author: {
-      name: 'John Doe',
-      email: '#',
+      name: 'Maaz Syed Adeeb',
+      email: 'maaz.adeeb@gmail.com',
       telegram: '#',
-      twitter: '#',
-      github: '#',
+      twitter: 'maaz93',
+      github: 'maaz93',
       rss: '#',
-      vk: '#'
+      vk: '#',
+      stackoverflow: '2950032/maaz-syed-adeeb'
     }
   },
   plugins: [
@@ -117,14 +118,14 @@ module.exports = {
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-google-analytics',
-      options: { trackingId: 'UA-73379983-2' }
+      options: { trackingId: 'UA-105814760-1' }
     },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`roboto\:400,400i,500,700`]
-      }
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: [`roboto\:400,400i,500,700`]
+    //   }
+    // },
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
