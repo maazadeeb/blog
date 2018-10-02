@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import moment from 'moment';
 import Disqus from '../Disqus/Disqus';
+import profilePic from '../../pages/photo.jpg';
 import './style.scss';
 
 class PostTemplateDetails extends React.Component {
@@ -50,12 +51,21 @@ class PostTemplateDetails extends React.Component {
           <div className="post-single__footer">
             {tagsBlock}
             <hr />
-            <p className="post-single__footer-text">
-              {subtitle}
-              <a href={`https://twitter.com/${author.twitter}`} target="_blank" rel="noopener noreferrer">
-                <br /> <strong>{author.name}</strong> on Twitter
-              </a>
-            </p>
+            <div className="post-single__footer-author-details">
+              <img
+                src={profilePic}
+                className="post-single__footer-author-details-photo"
+                width="75"
+                height="75"
+                alt={author.name}
+              />
+              <p className="post-single__footer-author-details-text">
+                {subtitle}
+                <a href={`https://twitter.com/${author.twitter}`} target="_blank" rel="noopener noreferrer">
+                  <br /> <strong>{author.name}</strong> on Twitter
+                </a>
+              </p>
+            </div>
             {commentsBlock}
           </div>
         </div>

@@ -57,9 +57,19 @@
         @include line-height(1);
         @include margin-top(1);
         @include margin-bottom(2);
-        &-text {
-            & a {
-                text-decoration: underline;
+        &-author-details {
+            display: flex;
+            align-items: center;
+            @include margin-bottom(1);
+            &-photo {
+                border-radius: 50%;
+                margin-right: 15px;
+            }
+            &-text {
+                margin: 0;
+                & a {
+                    text-decoration: underline;
+                }
             }
         }
     }
