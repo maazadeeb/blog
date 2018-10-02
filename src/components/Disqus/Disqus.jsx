@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import ReactDisqusComments from 'react-disqus-comments';
+import React, { Component } from "react";
+import ReactDisqusComments from "react-disqus-comments";
 
 class Disqus extends Component {
   constructor(props) {
@@ -15,7 +15,7 @@ class Disqus extends Component {
   }
   notifyAboutComment() {
     const toasts = this.state.toasts.slice();
-    toasts.push({ text: 'New comment available!!' });
+    toasts.push({ text: "New comment available!!" });
     this.setState({ toasts });
   }
   render() {
