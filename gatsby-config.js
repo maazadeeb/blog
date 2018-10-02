@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    url: "https://lumen.netlify.com",
+    url: "https://maazadeeb.com",
     title: "Blog by Maaz Syed Adeeb",
     subtitle:
       "Learner. Experimentalist. Code, food and football never cease to thrill me.",
@@ -14,11 +14,11 @@ module.exports = {
       {
         label: "About me",
         path: "/about/"
-      },
+      } /* ,
       {
         label: "Contact me",
         path: "/contact/"
-      }
+      } */
     ],
     author: {
       name: "Maaz Syed Adeeb",
