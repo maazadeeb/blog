@@ -4,10 +4,14 @@ layout: page
 path: "/about"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+Hi!
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](./1.jpg)
+I'm Maaz Syed Adeeb. 🤓 An enthusiastic developer who loves JavaScript and all things front-end, at the moment. I've been a professional software dev since 2015, but I've been in love with computers and programming since I was a kid. I learnt [Logo](https://en.wikipedia.org/wiki/Logo_(programming_language)) in fourth grade and was fascinated by the patterns I could generate by using simple for loops. I've not stopped since then.
 
-_Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi._
+I love writing tests for the code I write and Test Driven Development (TDD) interests me a lot. I'm a sucker for build and code formatting setups. I attend a lot of hackathons and have won quite a few.
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+In my free time, I like to eat various cuisines and play/watch football (not American). Also, I love open source. I'm a beginner you can say, but I like to make contributions where possible.
+
+This blog will contain things I learn in my day to day life and I want to write as often as possible, since I'm always learning something.
+
+Hope to see you around! 👻
