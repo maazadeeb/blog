@@ -3,6 +3,7 @@ import Link from "gatsby-link";
 import moment from "moment";
 import Disqus from "../Disqus/Disqus";
 import profilePic from "../../pages/photo.jpg";
+import { isDev } from "../../utils/flags";
 import "./style.scss";
 
 class PostTemplateDetails extends React.Component {
@@ -81,7 +82,7 @@ class PostTemplateDetails extends React.Component {
                 </a>
               </p>
             </div>
-            {commentsBlock}
+            {!isDev() && commentsBlock}
           </div>
         </div>
       </div>
