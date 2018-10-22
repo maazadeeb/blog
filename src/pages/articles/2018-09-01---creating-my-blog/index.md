@@ -8,7 +8,7 @@ category: "Blog"
 tags:
   - "Website"
   - "Setup"
-description: "TODO"
+description: "I've always wanted a blog of my own. Something that I can link people to, when I pop up on somebody's twitter feed or facebook suggestions. Something where I can document my work and share my learnings with the world."
 ---
 
 ## Motivation
@@ -35,3 +35,5 @@ You can head over to my [blog repo](https://github.com/maaz93/blog) to check out
 ## Challenges
 
 There are few challenges in maintaining a blog, but I'm excited to take them up. Majorly, the starter I used has a lot of outdated dependencies, `react@15` being one of them. I want to experience the upgrading challenge. Also, I plan to put things out faster. I've been holding back a lot, and I want to be able to share my experiences and learnings much faster.
+
+Thanks for reading!
