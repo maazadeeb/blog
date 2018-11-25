@@ -26,7 +26,7 @@ module.exports = {
       telegram: "#",
       twitter: "maaz93",
       github: "maaz93",
-      rss: "#",
+      rss: "/rss.xml",
       vk: "#",
       stackoverflow: "2950032/maaz-syed-adeeb"
     }

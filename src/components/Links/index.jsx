@@ -41,26 +41,12 @@ class Links extends React.Component {
               <i className="icon-stackoverflow" />
             </a>
           </li>
-        </ul>
-        {/* <ul className="links__list">
-          <li className="links__list-item">
-            <a href={`https://www.vk.com/${links.vk}`} target="_blank" >
-              <i className="icon-vkontakte" />
-            </a>
-          </li>
-          <li className="links__list-item">
-            <a href={`telegram:${links.telegram}`}>
-              <i className="icon-paper-plane" />
-            </a>
-          </li>
-        </ul>
-        <ul className="links__list">
           <li className="links__list-item">
             <a href={links.rss}>
               <i className="icon-rss" />
             </a>
           </li>
-        </ul> */}
+        </ul>
       </div>
     );
   }
