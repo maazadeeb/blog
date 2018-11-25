@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
+import Link from "gatsby-link";
 
 class NotFoundRoute extends React.Component {
   render() {
@@ -9,10 +10,11 @@ class NotFoundRoute extends React.Component {
         <div className="content">
           <div className="content__inner">
             <div className="page">
-              <h1 className="page__title">NOT FOUND</h1>
+              <h1 className="page__title">Page not found</h1>
               <div className="page__body">
                 <p>
-                  You just hit a route that doesn&#39;t exist... the sadness.
+                  The page you're trying to access doesn't exist. Go to the{" "}
+                  <Link to="/">home page</Link> maybe?
                 </p>
               </div>
             </div>
