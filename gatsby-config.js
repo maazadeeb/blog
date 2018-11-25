@@ -26,7 +26,7 @@ module.exports = {
       telegram: "#",
       twitter: "maaz93",
       github: "maaz93",
-      rss: "#",
+      rss: "/rss.xml",
       vk: "#",
       stackoverflow: "2950032/maaz-syed-adeeb"
     }
@@ -122,7 +122,7 @@ module.exports = {
       options: { trackingId: "UA-105814760-1" }
     },
     {
-      resolve: `gatsby-plugin-web-font-loader`,
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
           families: ["Roboto:400,400i,500,700"]
@@ -160,6 +160,18 @@ module.exports = {
               priority: 0.7
             };
           })
+      }
+    },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "Blog by Maaz",
+        short_name: "Blog by Maaz",
+        start_url: "/",
+        background_color: "#5d93ff",
+        theme_color: "#5d93ff",
+        display: "standalone",
+        icon: "static/images/favicon.png" // This path is relative to the root of the site.
       }
     },
     "gatsby-plugin-offline",

@@ -7,7 +7,7 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "clean:public": "rm -rf public",
-    "clean": "npm run clean:public",
+    "clean": "yarn run clean:public",
     "lint": "./node_modules/.bin/eslint --cache --ext .js,.jsx --ignore-pattern public .",
     "lint:fix": "./node_modules/.bin/eslint --fix --cache --ext .js,.jsx --ignore-pattern public . && prettier --write './src/**/*.{scss,md}'",
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -22,12 +22,18 @@ class Links extends React.Component {
             <a
               href={`https://www.twitter.com/${links.twitter}`}
               target="_blank"
+              rel="noopener noreferrer"
+              rel="noopener noreferrer"
             >
               <i className="icon-twitter" />
             </a>
           </li>
           <li className="links__list-item">
-            <a href={`https://www.github.com/${links.github}`} target="_blank">
+            <a
+              href={`https://www.github.com/${links.github}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="icon-github" />
             </a>
           </li>
@@ -37,30 +43,20 @@ class Links extends React.Component {
             </a>
           </li>
           <li className="links__list-item">
-            <a href={`https://stackoverflow.com/${links.stackoverflow}`}>
+            <a
+              href={`https://stackoverflow.com/users/${links.stackoverflow}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="icon-stackoverflow" />
             </a>
           </li>
-        </ul>
-        {/* <ul className="links__list">
           <li className="links__list-item">
-            <a href={`https://www.vk.com/${links.vk}`} target="_blank" >
-              <i className="icon-vkontakte" />
-            </a>
-          </li>
-          <li className="links__list-item">
-            <a href={`telegram:${links.telegram}`}>
-              <i className="icon-paper-plane" />
-            </a>
-          </li>
-        </ul>
-        <ul className="links__list">
-          <li className="links__list-item">
-            <a href={links.rss}>
+            <a href={links.rss} target="_blank" rel="noopener noreferrer">
               <i className="icon-rss" />
             </a>
           </li>
-        </ul> */}
+        </ul>
       </div>
     );
   }
