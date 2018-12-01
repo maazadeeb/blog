@@ -1,5 +1,5 @@
+import { Link } from "gatsby";
 import React from "react";
-import Link from "gatsby-link";
 import "./style.scss";
 
 class Menu extends React.Component {

@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import { graphql } from "gatsby";
 import PageTemplateDetails from "../components/PageTemplateDetails";
 
 class PageTemplate extends React.Component {

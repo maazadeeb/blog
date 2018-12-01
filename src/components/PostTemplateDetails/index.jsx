@@ -1,5 +1,5 @@
+import { Link } from "gatsby";
 import React from "react";
-import Link from "gatsby-link";
 import moment from "moment";
 import Disqus from "../Disqus/Disqus";
 import profilePic from "../../pages/photo.jpg";

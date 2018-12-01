@@ -1,6 +1,6 @@
+import { Link, graphql } from "gatsby";
 import React from "react";
 import Sidebar from "../components/Sidebar";
-import Link from "gatsby-link";
 
 class NotFoundRoute extends React.Component {
   render() {

@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql } from "gatsby";
 import Helmet from "react-helmet";
 import Post from "../components/Post";
 import Sidebar from "../components/Sidebar";
