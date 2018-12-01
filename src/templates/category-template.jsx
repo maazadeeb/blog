@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Sidebar from "../components/Sidebar";
+import Layout from "../components/Layout";
 import CategoryTemplateDetails from "../components/CategoryTemplateDetails";
 
 class CategoryTemplate extends React.Component {
@@ -11,9 +12,11 @@ class CategoryTemplate extends React.Component {
 
     return (
       <div>
-        <Helmet title={`${category} - ${title}`} />
-        <Sidebar {...this.props} />
-        <CategoryTemplateDetails {...this.props} />
+        <Layout>
+          <Helmet title={`${category} - ${title}`} />
+          <Sidebar {...this.props} />
+          <CategoryTemplateDetails {...this.props} />
+        </Layout>
       </div>
     );
   }
