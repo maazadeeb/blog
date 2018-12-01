@@ -1,6 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { graphql } from "gataby";
+import { graphql } from "gatsby";
 import Sidebar from "../components/Sidebar";
 import TagTemplateDetails from "../components/TagTemplateDetails";
 
