@@ -4,8 +4,6 @@ import Helmet from "react-helmet";
 import Post from "../components/Post";
 import Sidebar from "../components/Sidebar";
 
-import "../assets/scss/init.scss";
-
 class IndexRoute extends React.Component {
   render() {
     const items = [];
