@@ -30,7 +30,6 @@
     "gatsby-plugin-google-analytics": "^2.0.8",
     "gatsby-plugin-manifest": "^2.0.11",
     "gatsby-plugin-offline": "^2.0.18",
-    "gatsby-plugin-postcss-sass": "^1.0.15",
     "gatsby-plugin-react-helmet": "^3.0.3",
     "gatsby-plugin-sass": "^2.0.5",
     "gatsby-plugin-sharp": "^2.0.14",
@@ -48,7 +47,7 @@
     "node-sass": "^4.10.0",
     "prismjs": "^1.15.0",
     "react": "^16.6.3",
-    "react-disqus-comments": "^1.1.1",
+    "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0"
   },
