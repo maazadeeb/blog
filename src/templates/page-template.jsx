@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import Layout from "../components/Layout";
+import withLayout from "../containers/withLayout";
 import PageTemplateDetails from "../components/PageTemplateDetails";
 
 class PageTemplate extends React.Component {
@@ -13,19 +13,17 @@ class PageTemplate extends React.Component {
 
     return (
       <div>
-        <Layout>
-          <Helmet>
-            <title>{`${pageTitle} - ${title}`}</title>
-            <meta name="description" content={description} />
-          </Helmet>
-          <PageTemplateDetails {...this.props} />
-        </Layout>
+        <Helmet>
+          <title>{`${pageTitle} - ${title}`}</title>
+          <meta name="description" content={description} />
+        </Helmet>
+        <PageTemplateDetails {...this.props} />
       </div>
     );
   }
 }
 
-export default PageTemplate;
+export default withLayout(PageTemplate);
 
 export const pageQuery = graphql`
   query PageBySlug($slug: String!) {

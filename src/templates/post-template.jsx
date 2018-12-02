@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import Layout from "../components/Layout";
+import withLayout from "../containers/withLayout";
 import PostTemplateDetails from "../components/PostTemplateDetails";
 
 class PostTemplate extends React.Component {
@@ -13,19 +13,17 @@ class PostTemplate extends React.Component {
 
     return (
       <div>
-        <Layout>
-          <Helmet>
-            <title>{`${postTitle} - ${title}`}</title>
-            <meta name="description" content={description} />
-          </Helmet>
-          <PostTemplateDetails {...this.props} />
-        </Layout>
+        <Helmet>
+          <title>{`${postTitle} - ${title}`}</title>
+          <meta name="description" content={description} />
+        </Helmet>
+        <PostTemplateDetails {...this.props} />
       </div>
     );
   }
 }
 
-export default PostTemplate;
+export default withLayout(PostTemplate);
 
 export const pageQuery = graphql`
   query PostBySlug($slug: String!) {

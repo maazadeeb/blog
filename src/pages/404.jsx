@@ -1,6 +1,7 @@
 import { Link, graphql } from "gatsby";
 import React from "react";
 import Sidebar from "../components/Sidebar";
+import withLayout from "../containers/withLayout";
 
 class NotFoundRoute extends React.Component {
   render() {
@@ -25,7 +26,7 @@ class NotFoundRoute extends React.Component {
   }
 }
 
-export default NotFoundRoute;
+export default withLayout(NotFoundRoute);
 
 export const pageQuery = graphql`
   query NotFoundQuery {

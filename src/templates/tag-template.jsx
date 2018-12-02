@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import Layout from "../components/Layout";
+import withLayout from "../containers/withLayout";
 import Sidebar from "../components/Sidebar";
 import TagTemplateDetails from "../components/TagTemplateDetails";
 
@@ -12,17 +12,15 @@ class TagTemplate extends React.Component {
 
     return (
       <div>
-        <Layout>
-          <Helmet title={`All Posts tagged as "${tag}" - ${title}`} />
-          <Sidebar {...this.props} />
-          <TagTemplateDetails {...this.props} />
-        </Layout>
+        <Helmet title={`All Posts tagged as "${tag}" - ${title}`} />
+        <Sidebar {...this.props} />
+        <TagTemplateDetails {...this.props} />
       </div>
     );
   }
 }
 
-export default TagTemplate;
+export default withLayout(TagTemplate);
 
 export const pageQuery = graphql`
   query TagPage($tag: String) {

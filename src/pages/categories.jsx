@@ -2,6 +2,7 @@ import { Link, graphql } from "gatsby";
 import React from "react";
 import Helmet from "react-helmet";
 import kebabCase from "lodash/kebabCase";
+import withLayout from "../containers/withLayout";
 import Sidebar from "../components/Sidebar";
 
 class CategoriesRoute extends React.Component {
@@ -44,7 +45,7 @@ class CategoriesRoute extends React.Component {
   }
 }
 
-export default CategoriesRoute;
+export default withLayout(CategoriesRoute);
 
 export const pageQuery = graphql`
   query CategoryesQuery {
