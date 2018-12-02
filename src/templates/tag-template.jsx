@@ -1,5 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import withLayout from "../containers/withLayout";
 import Sidebar from "../components/Sidebar";
 import TagTemplateDetails from "../components/TagTemplateDetails";
 
@@ -18,7 +20,7 @@ class TagTemplate extends React.Component {
   }
 }
 
-export default TagTemplate;
+export default withLayout(TagTemplate);
 
 export const pageQuery = graphql`
   query TagPage($tag: String) {

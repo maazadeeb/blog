@@ -1,5 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import withLayout from "../containers/withLayout";
 import PostTemplateDetails from "../components/PostTemplateDetails";
 
 class PostTemplate extends React.Component {
@@ -21,7 +23,7 @@ class PostTemplate extends React.Component {
   }
 }
 
-export default PostTemplate;
+export default withLayout(PostTemplate);
 
 export const pageQuery = graphql`
   query PostBySlug($slug: String!) {

@@ -1,5 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import withLayout from "../containers/withLayout";
 import PageTemplateDetails from "../components/PageTemplateDetails";
 
 class PageTemplate extends React.Component {
@@ -21,7 +23,7 @@ class PageTemplate extends React.Component {
   }
 }
 
-export default PageTemplate;
+export default withLayout(PageTemplate);
 
 export const pageQuery = graphql`
   query PageBySlug($slug: String!) {

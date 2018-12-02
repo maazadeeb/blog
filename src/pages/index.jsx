@@ -1,5 +1,7 @@
 import React from "react";
+import { graphql } from "gatsby";
 import Helmet from "react-helmet";
+import withLayout from "../containers/withLayout";
 import Post from "../components/Post";
 import Sidebar from "../components/Sidebar";
 
@@ -27,7 +29,7 @@ class IndexRoute extends React.Component {
   }
 }
 
-export default IndexRoute;
+export default withLayout(IndexRoute);
 
 export const pageQuery = graphql`
   query IndexQuery {

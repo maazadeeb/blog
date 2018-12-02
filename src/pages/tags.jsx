@@ -1,7 +1,8 @@
+import { Link, graphql } from "gatsby";
 import React from "react";
-import Link from "gatsby-link";
 import Helmet from "react-helmet";
 import kebabCase from "lodash/kebabCase";
+import withLayout from "../containers/withLayout";
 import Sidebar from "../components/Sidebar";
 
 class TagsRoute extends React.Component {
@@ -41,7 +42,7 @@ class TagsRoute extends React.Component {
   }
 }
 
-export default TagsRoute;
+export default withLayout(TagsRoute);
 
 export const pageQuery = graphql`
   query TagsQuery {

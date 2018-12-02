@@ -1,6 +1,6 @@
+import { Link } from "gatsby";
 import React from "react";
 import get from "lodash/get";
-import Link from "gatsby-link";
 import Menu from "../Menu";
 import Links from "../Links";
 import profilePic from "../../pages/photo.jpg";
