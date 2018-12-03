@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
-import moment from "moment";
+import format from "date-fns/format";
 import Disqus from "../Disqus/Disqus";
 import profilePic from "../../pages/photo.jpg";
 import { isDev } from "../../utils/flags";
@@ -55,9 +55,7 @@ class PostTemplateDetails extends React.Component {
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
             <div className="post-single__date">
-              <em>
-                Published {moment(post.frontmatter.date).format("D MMM YYYY")}
-              </em>
+              <em>Published {format(post.frontmatter.date, "D MMM YYYY")}</em>
             </div>
           </div>
           <div className="post-single__footer">
