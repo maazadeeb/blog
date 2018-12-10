@@ -16,7 +16,7 @@ Turns out, I was wrong. 🤷‍♂ I posted my [first answer](https://stackoverf
 
 ## The rush gets the best out of you 🏃
 
-It's a very well known fact that when you're under pressure, you tend to perform better. That's precisely what happens when you find a new question to answer. You're rushing to answer it before anyone does (Initially I guess. I still get that kick). Finding the right references, correcting the code formatting, double checking grammar. Unknowingly, you're actually getting better at the topics that you answer and follow. That's what happened with me at least!
+It's a very well known fact that when you're under pressure, you tend to perform better. That's precisely what happens when you find a new question to answer. You're rushing to answer it before anyone does (Initially I guess. I still get that kick). Finding the right references, correcting the code formatting, double checking grammar. Unknowingly, you're actually getting better at the topics that you answer and follow.
 
 ## Improves your bug bashing skills 🐛 🔪
 
@@ -26,7 +26,7 @@ If you think from a different angle, a SO question is a bug or a mistake. And yo
 
 In retrospect, I wasn't good at JavaScript at all. JavaScript `this` pissed me off so much and asynchronous was only one of the hardest spelling in my dictionary! Heck, I didn't even know how to put a breakpoint in DevTools! 😆 Answering questions on SO about these topics was something that helped me gain an understanding of these topics and cause lesser bugs related to them at work.
 
-## There's more than one solution
+## There's more than one solution ♾️
 
 If there's one thing that answering on SO will teach you over time, is that there are multiple solutions to a problem. And, it's OK that you couldn't think of something better. You solved the problem, and "**it works**"™.
 
