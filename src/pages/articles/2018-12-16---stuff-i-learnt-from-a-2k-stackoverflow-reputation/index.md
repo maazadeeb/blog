@@ -7,35 +7,31 @@ path: "/posts/stuff-i-learnt-from-a-2k-stackoverflow-reputation"
 category: "Experience"
 tags:
   - "Learning"
-description: "TODO"
+description: "I've been a member of StackOverflow (SO in short) for over 5 years, though I've used it from much before. I never thought of getting an account earlier because I wondered what I would do with it."
 ---
 
-I've been a member of StackOverflow (SO in short) for just over 5 years, though I've used it from much before. I never thought of getting an account earlier because I thought what would I do with it. Almost any answer that I wanted was always available by some mysterious force and I used to believe that only some legendary people know answers to stuff and I won't be a match to anyone of them.
+I've been a member of StackOverflow (SO in short) for over 5 years, though I've used it from much before. I never thought of getting an account earlier because I wondered what I would do with it. And almost every answer was always available. I used to believe that only some legendary people know answers to stuff and I won't be a match to anyone of them.
 
-Turns out, I was wrong. I posted my [first answer](https://stackoverflow.com/a/39314388/2950032) on September 2016 (that's approximately 3 years after joining), and was surprised that 2 people actually thought it was useful!! What a feeling! Since then, I started looking for questions to answer and here are the things that I've learnt along the way.
+Turns out, I was wrong. I posted my [first answer](https://stackoverflow.com/a/39314388/2950032) on September 2016 (that's approx. 3 years after joining). I was surprised that 2 people actually thought it was useful!! What a feeling! Since then, I started looking for questions to answer and here are the things that I've learnt along the way.
 
 ## The rush gets the best out of you 🏃🏃
 
-It's a very well known fact that when you're under pressure, you tend to perform better. That's precisely what happens when you find a new question to answer. You're rushing to answer it before anyone does (Initially I guess. I still get that kick). Finding the right references, correcting the code formatting, double checking grammar. Unknowingly, you're actually getting better at the topics that you answer and follow.
+It's a very well known fact that when you're under pressure, you tend to perform better. That's what happens when you find a new question to answer. You're rushing to answer it before anyone does, at least at the initial stages. Finding the right references, correcting the code formatting, double checking grammar. During this process, you're getting better at the topics that you answer and follow.
 
 ## Improves your bug bashing skills 🐛🔪
 
-If you think from a different angle, a SO question is a bug or a mistake. And your job is to fix it. Also, I believe it's good to make mistakes and learn from them. But, you can't make all the mistakes. So, answering a question also gives you a way to understand the kind of mistakes that one could make and helps you to avoid making them in your day-to-day work. I think that is extremely powerful and smart,
+If you think from a different angle, a SO question is a bug or a mistake. And your job is to fix it. Also, it's good to make mistakes and learn from them. But, you can't make all the mistakes. So, answering a question also gives you a way to understand the kind of mistakes that one could make. It helps you to avoid making them in your day-to-day work. This is extremely powerful and smart,
 
 > ...learn from others' mistakes...
 
-In retrospect, I wasn't good at JavaScript at all. JavaScript `this` pissed me off so much and asynchronous was only one of the hardest spelling in my dictionary! Heck, I didn't even know how to put a breakpoint in DevTools! 😆 Answering questions on SO about these topics was something that helped me gain an understanding of these topics and cause lesser bugs related to them at work.
+In retrospect, I wasn't good at JavaScript at all. JavaScript `this` pissed me off so much. "Asynchronous" was only one of the hardest spelling in my dictionary! Heck, I didn't even know how to put a breakpoint in DevTools! 😆 Answering questions on SO helped me gain an understanding of these topics.
 
 ## There's more than one solution ♾️
 
-If there's one thing that answering on SO will teach you over time, is that there are multiple solutions to a problem. And, it's OK that you couldn't think of something better. You solved the problem, and "**it works**"™.
-
-This fact is quite humbling as well. You thought you knew everything about the subject you're answering about, and then comes a person who answers in a way that you couldn't/didn't think of. Soak it in, learn and continue.
+One thing that answering on SO will teach you over time, is that there are many solutions to a problem. And, it's OK that you couldn't think of something better. You solved the problem, and"**it works**"™. This fact is quite humbling as well. You thought you knew everything about a particular subject. And then comes a person who answers in a way that you couldn't/didn't think of. Soak it in, learn and continue. I upvote answers that solve problems in a way that I couldn't think of.
 
 ## Gamification works ⚽️
 
-Almost everything you do on SO, be it asking questions, answering questions, editing badly formatted code, flagging spam, reviewing things etc. ends up giving you something that'll show on your profile. Reputation points and badges gamify this process and give you some dopamine to crunch on. Imagine a dopamine rich process which has gains for the producer, consumer and the mediator! Such awesome. Much wow. 💍
+Almost everything you do on SO ends up giving you something that'll show on your profile. Reputation points and badges gamify this process and give you some dopamine to enjoy. Imagine a dopamine rich process which has gains for everybody! Such awesome. Much wow. 💍 It might feel silly, but this is like likes/shares on social media platforms. You'd be lying to yourself if you said that a like on your vacation photo doesn't give you a little sense of happiness.
 
-Overall, I believe answering on SO has given me some kind of confidence about my own problem solving abilities. I like seeing how people are willing to help somebody for nothing but the satisfaction that they did, and I strive to do so too.
-
-I think I'll write a post about tips on finding and writing answers on SO and how you could help the community as well. Stay tuned!
+Answering on SO has given me some kind of confidence about my own problem solving abilities. It's motivating to see that people are willing to help somebody for almost nothing in return. I'll write a post about tips on finding and writing answers on SO and how you could help the community as well. Stay tuned!
