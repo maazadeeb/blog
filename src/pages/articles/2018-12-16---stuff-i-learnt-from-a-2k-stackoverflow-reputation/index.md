@@ -12,11 +12,11 @@ description: "I've been a member of StackOverflow (SO in short) for over 5 years
 
 I've been a member of StackOverflow (SO in short) for over 5 years, though I've used it from much before. I never thought of getting an account earlier because I wondered what I would do with it. And almost every answer was always available. I used to believe that only some legendary people know answers to stuff and I won't be a match to anyone of them.
 
-Turns out, I was wrong. I posted my [first answer](https://stackoverflow.com/a/39314388/2950032) on September 2016 (that's approx. 3 years after joining). I was surprised that 2 people actually thought it was useful!! What a feeling! Since then, I started looking for questions to answer and here are the things that I've learnt along the way.
+Turns out, I was wrong. I posted my [first answer](https://stackoverflow.com/a/39314388/2950032) on September 2016 (that's approx. 3 years after joining). I was surprised that 2 people actually thought it was useful!! What a feeling! Since then, I started answering questions and here are some things that I've learnt along the way.
 
-## The rush gets the best out of you 🏃🏃
+## The rush forces the best out of you 🏃🏃
 
-It's a very well known fact that when you're under pressure, you tend to perform better. That's what happens when you find a new question to answer. You're rushing to answer it before anyone does, at least at the initial stages. Finding the right references, correcting the code formatting, double checking grammar. During this process, you're getting better at the topics that you answer and follow.
+It's a very well known fact that when you're under pressure, you tend to perform better. That's what happens when you find a new question to answer. You're rushing to answer it before anyone does (atleast at the initial stages) - Finding the right references, correcting the code formatting, double checking grammar. During this process, you're getting better at the topics that you answer and follow.
 
 ## Improves your bug bashing skills 🐛🔪
 
@@ -32,6 +32,6 @@ One thing that answering on SO will teach you over time, is that there are many 
 
 ## Gamification works ⚽️
 
-Almost everything you do on SO ends up giving you something that'll show on your profile. Reputation points and badges gamify this process and give you some dopamine to enjoy. Imagine a dopamine rich process which has gains for everybody! Such awesome. Much wow. 💍 It might feel silly, but this is like likes/shares on social media platforms. You'd be lying to yourself if you said that a like on your vacation photo doesn't give you a little sense of happiness.
+Almost everything you do on SO ends up giving you something that'll show on your profile. Reputation points and badges gamify this process and give you some dopamine to enjoy. Imagine a dopamine rich process which has gains for everybody! Such awesome. Much wow. 💍 It might feel silly, but this is like shares/likes on social media platforms. You'd be lying to yourself if you said that a like on your vacation photo doesn't give you a little sense of happiness.
 
 Answering on SO has given me some kind of confidence about my own problem solving abilities. It's motivating to see that people are willing to help somebody for almost nothing in return. I'll write a post about tips on finding and writing answers on SO and how you could help the community as well. Stay tuned!
