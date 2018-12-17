@@ -6,7 +6,7 @@ import withLayout from "../containers/withLayout";
 class NotFoundRoute extends React.Component {
   render() {
     return (
-      <div>
+      <>
         <Sidebar {...this.props} />
         <div className="content">
           <div className="content__inner">
@@ -21,7 +21,7 @@ class NotFoundRoute extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }

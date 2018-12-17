@@ -11,11 +11,11 @@ class TagTemplate extends React.Component {
     const { tag } = this.props.pathContext;
 
     return (
-      <div>
+      <>
         <Helmet title={`All Posts tagged as "${tag}" - ${title}`} />
         <Sidebar {...this.props} />
         <TagTemplateDetails {...this.props} />
-      </div>
+      </>
     );
   }
 }

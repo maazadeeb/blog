@@ -12,13 +12,13 @@ class PageTemplate extends React.Component {
     const description = pageDescription !== null ? pageDescription : subtitle;
 
     return (
-      <div>
+      <>
         <Helmet>
           <title>{`${pageTitle} - ${title}`}</title>
           <meta name="description" content={description} />
         </Helmet>
         <PageTemplateDetails {...this.props} />
-      </div>
+      </>
     );
   }
 }
