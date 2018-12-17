@@ -87,6 +87,9 @@
       &-item {
         display: inline-block;
         margin: 10px 5px;
+        &:first-child {
+          margin-left: 0; // Fix #16
+        }
         &-link {
           background: $color-gray-bg;
           text-decoration: none;
