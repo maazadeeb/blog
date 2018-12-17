@@ -45,7 +45,7 @@ class PostTemplateDetails extends React.Component {
     );
 
     return (
-      <div>
+      <>
         {homeBlock}
         <div className="post-single">
           <div className="post-single__inner">
@@ -83,7 +83,7 @@ class PostTemplateDetails extends React.Component {
             {!isDev() && commentsBlock}
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }

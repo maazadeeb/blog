@@ -12,13 +12,13 @@ class PostTemplate extends React.Component {
     const description = postDescription !== null ? postDescription : subtitle;
 
     return (
-      <div>
+      <>
         <Helmet>
           <title>{`${postTitle} - ${title}`}</title>
           <meta name="description" content={description} />
         </Helmet>
         <PostTemplateDetails {...this.props} />
-      </div>
+      </>
     );
   }
 }

@@ -7,7 +7,7 @@ class PageTemplateDetails extends React.Component {
     const page = this.props.data.markdownRemark;
 
     return (
-      <div>
+      <>
         <Sidebar {...this.props} />
         <div className="content">
           <div className="content__inner">
@@ -20,7 +20,7 @@ class PageTemplateDetails extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }
