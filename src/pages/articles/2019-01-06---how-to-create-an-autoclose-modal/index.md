@@ -9,10 +9,10 @@ tags:
   - "Javascript"
   - "HTML"
   - "HowTo"
-description: "TODO"
+description: Have you ever wondered how dialogs, menus and other UI elements that seem to popup on the screen, have this behavior of closing automatically when you click outside them? Many people refer to it as an "autoclose" functionality. So, let's learn how to create an autoclose modal.
 ---
 
-Have you ever wondered how dialogs, menus and other UI elements that seem to popup on the screen, have this behavior of closing automatically when you click outside them? Many people refer to it as an "autoclose" functionality. So, let's learn how to create an autoclose modal. We'll be doing it in vanilla JavaScript and you can implement the same using your framework of choice.
+Have you ever wondered how dialogs, menus and other UI elements that seem to popup on the screen, have this behavior of closing automatically when you click outside them? Many people refer to it as an "autoclose" functionality. So, let's learn how to create an autoclose modal. We'll be doing it in vanilla JavaScript, but you can implement the same using your framework of choice.
 
 ## The DOM
 
@@ -21,9 +21,7 @@ We need only 3 `div`s to create the base structure of a modal. One for the modal
 ```html
 <div class="modal-wrapper">
   <div class="modal-backdrop"></div>
-  <div class="modal-content">
-    <!-- The content like OK/Cancel buttons, warning messages etc. go here -->
-  </div>
+  <div class="modal-content"></div>
 </div>
 ```
 
@@ -56,7 +54,7 @@ PS: Inline styles override class based styles. That's how our modal open/close w
 
 ## The events
 
-In general, we need to close the modal when the user presses escape key or clicks anywhere outside the modal content area. When the backdrop is visible, the modal is generally closed by a user action inside the modal content or by pressing escape. Clicking outside doesn't have any effect, like in Dialogs. But when being used for a Menu or a Tooltip, the modal will trigger a close mechanism when clicked outside as well.
+In general, we need to close the modal when the user presses the escape key or clicks anywhere outside the modal content area. When the backdrop is visible, the modal is generally closed by a user action inside the modal content or by pressing escape. Clicking outside doesn't have any effect, like in Dialogs. But when being used for a Menu or a Tooltip, the modal will trigger a close mechanism when clicked outside as well.
 
 For the purposes of this demo, we'll close the modal when clicking outside even when the backdrop is visible.
 
@@ -82,7 +80,7 @@ const handleDocumentClick = evt => {
 
 ## The code
 
-Here's a CodePen with everything we've discussed.
+Here's a CodePen with everything we've discussed. There is one button which opens the modal and one button in the modal content which closes the modal. Clicking outside or pressing escape closes the modal.
 
 <iframe height='265' scrolling='no' title='Modal' src='//codepen.io/sniper6/embed/preview/MZOYYr/?height=265&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/sniper6/pen/MZOYYr/'>Modal</a> by Maaz Syed Adeeb (<a href='https://codepen.io/sniper6'>@sniper6</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
