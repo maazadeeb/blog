@@ -62,7 +62,7 @@ Hence we'll need to listen to the keyboard `keyup` event and the mouse `click` e
 
 The keyboard handler is pretty straight-forward. It'll just check if the escape key was pressed and then trigger the modal closing. But, the click handler is a bit trickier. We need to check if the click was registered outside the modal. Only then close the modal. Can you think of how that can be done?
 
-One way, the way we'll employ, is using the [`contains`](https://developer.mozilla.org/en-US/docs/Web/API/Node/contains) DOM API. We can check if the clicked event target is not contained inside the `.modal-content` and only then close. The code for the event handlers reduces to
+One way, the way we'll employ, is using the [`contains`](https://developer.mozilla.org/en-US/docs/Web/API/Node/contains) DOM API. We can check if the clicked event target is not contained inside the `.modal-content` and only then close. The code for the event handlers is
 
 ```js
 const handleDocumentKeyup = evt => {
