@@ -1,6 +1,6 @@
 ---
 title: How to create an autoclose modal
-date: "2018-12-30"
+date: "2019-01-06"
 layout: post
 draft: false
 path: "/posts/how-to-create-an-autoclose-modal"
