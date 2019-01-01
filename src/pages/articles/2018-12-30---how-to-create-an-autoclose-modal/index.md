@@ -16,7 +16,7 @@ Have you ever wondered how dialogs, menus and other UI elements that seem to pop
 
 ## The DOM
 
-We need only 3 `div`s to create the base structure of a modal. One for the modal content, one for the backdrop and one for wrapping the two
+We need only 3 `div`s to create the base structure of a modal. One for the modal content, one for the backdrop and one for wrapping the two.
 
 ```html
 <div class="modal-wrapper">
@@ -27,7 +27,7 @@ We need only 3 `div`s to create the base structure of a modal. One for the modal
 </div>
 ```
 
-The CSS is nothing fancy. Apart from the fact that the backdrop has a `fixed` position and the content has an `absolute` position, there is nothing special about the rest of it.
+The CSS is nothing fancy. The backdrop has a `fixed` position. The content has an `absolute` position, in order to position it wherever required. If we were building a Dialog, the position of the content would probably be the center of the viewport. And, if it were a Menu, then probably next to the element that triggered the opening.
 
 ## Open/close behavior
 
@@ -37,7 +37,7 @@ There are a few ways to do the open/close behavior of a modal. A few are:
 1. Add and delete from the DOM
 1. Use `translate` and move the modal to some invisible viewport area
 
-...and there maybe more. The whole point is, the modal should support the ability to be shown and hidden. How you choose to do it is completely upto your choice. We'll use the `visibility` CSS property in this article. We'll keep the modal hidden by default in the `modal-wrapper` class and add an inline `visibility: visible` when we wan to open it. Like
+...and there maybe more. The whole point is, the modal should support the ability to be shown and hidden. How you choose to do it's completely upto your choice. We'll use the `visibility` CSS property in this article. We'll keep the modal hidden by default in the `modal-wrapper` class and add an inline `visibility: visible` when we wan to open it. Like
 
 ```css
 .modal-wrapper {
@@ -52,19 +52,19 @@ modalWrapperElement.style.visibility = "visible";
 modalWrapperElement.style.visibility = "";
 ```
 
-Just a side note that inline styles override class based styles and that's how our modal show/hide works. Also, setting a property on `style` to `""` or `null` deletes it from the inline style.
+PS: Inline styles override class based styles. That's how our modal open/close works. Also, setting a property on `style` to `""` or `null` deletes it from the inline style.
 
 ## The events
 
-In general, we need to close the modal when the user presses escape key or clicks anywhere outside the modal content area. When the backdrop is visible, the modal is generally closed by a user action inside the modal content or by pressing escape. Clicking outside doesn't have any effect, like in Dialogs. But when being used for a Menu or Tooltip, the modal will trigger a close mechanism when clicked outside as well.
+In general, we need to close the modal when the user presses escape key or clicks anywhere outside the modal content area. When the backdrop is visible, the modal is generally closed by a user action inside the modal content or by pressing escape. Clicking outside doesn't have any effect, like in Dialogs. But when being used for a Menu or a Tooltip, the modal will trigger a close mechanism when clicked outside as well.
 
 For the purposes of this demo, we'll close the modal when clicking outside even when the backdrop is visible.
 
-Hence we will need to listen to the mouse `click` event and a keyboard `keyup` event on the `document`. Listening on `document` is only required when the modal is open, so make sure that happens. We'll add the event handlers when we click on the trigger element and remove them anytime the modal closes. Simple `addEventListener` and `removeEventListener` to the rescue.
+Hence we'll need to listen to the keyboard `keyup` event and the mouse `click` event on the `document`. Listening on `document` is only required when the modal is open, so make sure that happens. Why? Because if we're always listening to the events, it's pretty much useless. And if you have too many modals, maybe it'll cause performance issues.
 
-The keyboard handler would be pretty straight-forward. It'll just check if escape key was pressed and then trigger the modal closing. But, the click handler a bit trickier. We need to check if the click was registered outside the modal. Only then close the modal. Can you think of how that can be done?
+The keyboard handler is pretty straight-forward. It'll just check if the escape key was pressed and then trigger the modal closing. But, the click handler is a bit trickier. We need to check if the click was registered outside the modal. Only then close the modal. Can you think of how that can be done?
 
-One way, the way we'll employ, is using [`contains`](https://developer.mozilla.org/en-US/docs/Web/API/Node/contains) DOM API. The code for the event handlers reduces to
+One way, the way we'll employ, is using the [`contains`](https://developer.mozilla.org/en-US/docs/Web/API/Node/contains) DOM API. We can check if the clicked event target is not contained inside the `.modal-content` and only then close. The code for the event handlers reduces to
 
 ```js
 const handleDocumentKeyup = evt => {
@@ -82,7 +82,7 @@ const handleDocumentClick = evt => {
 
 ## The code
 
-Here a CodePen with everything we've discussed.
+Here's a CodePen with everything we've discussed.
 
 <iframe height='265' scrolling='no' title='Modal' src='//codepen.io/sniper6/embed/preview/MZOYYr/?height=265&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/sniper6/pen/MZOYYr/'>Modal</a> by Maaz Syed Adeeb (<a href='https://codepen.io/sniper6'>@sniper6</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
