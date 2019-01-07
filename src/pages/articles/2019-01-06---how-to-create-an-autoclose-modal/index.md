@@ -35,7 +35,7 @@ There are a few ways to do the open/close behavior of a modal. A few are:
 1. Add and delete from the DOM
 1. Use `translate` and move the modal to some invisible viewport area
 
-...and there maybe more. The whole point is, the modal should support the ability to be shown and hidden. How you choose to do it's completely upto your choice. We'll use the `visibility` CSS property in this article. We'll keep the modal hidden by default in the `modal-wrapper` class and add an inline `visibility: visible` when we wan to open it. Like
+...and there maybe more. The whole point is, the modal should support the ability to be shown and hidden. How you choose to do it's completely upto your choice. We'll use the `visibility` CSS property in this article. We'll keep the modal hidden by default in the `modal-wrapper` class and add an inline `visibility: visible` when we want to open it. Like
 
 ```css
 .modal-wrapper {
