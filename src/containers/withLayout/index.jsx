@@ -7,7 +7,10 @@ function withLayout(Component) {
     render() {
       return (
         <div className="layout">
-          <Helmet defaultTitle="Blog by Maaz Syed Adeeb" />
+          <Helmet defaultTitle="Blog by Maaz Syed Adeeb">
+            <html lang="en" />
+            <noscript>You need to enable JavaScript to run this app.</noscript>
+          </Helmet>
           <Component {...this.props} />
         </div>
       );
