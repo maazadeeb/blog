@@ -15,7 +15,7 @@ description: "I've always wanted a blog of my own. Something that I can link peo
 
 I've always wanted a blog of my own. Something that I can link people to, when I pop up on somebody's twitter feed or facebook suggestions. Somewhere I can document my work and share my learnings with the world. A few months back, I got excited, bought a domain and created a website. But for an unknown reason, I didn't start writing. But once I set up my wife's [website](https://samreenk.com) as a birthday gift, I knew what I wanted to do with my site. It's true that there's nothing more motivating than a deadline! I got this weird motivation to start writing.
 
-I write about some details about my previous setup below as well as why I finally created a different one and took up the time to start writing. Read along if you're interested, or [follow me](https://twitter.com/maaz93) on Twitter where I'll share new blogs frequently.
+I write about some details about my previous setup below as well as why I finally created a different one and took up the time to start writing. Read along if you're interested, or [follow me](https://twitter.com/maazadeeb6) on Twitter where I'll share new blogs frequently.
 
 ## Previous setup
 
@@ -32,7 +32,7 @@ I setup my new site with Netlify and Gatsby. I literally set it up with [1 click
 
 Reasons for choosing Gatsby were many. Primary reason was that it's built on React. I have a huge personal interest in React and everything around it at the moment. Nothing like it to maintain a site built on React. Gatsby comes with an amazing set of plugins and a great plugin architecture. I intend to figure it out and a learn a bit from it. And things like code splitting, progressive web app support, GraphQL etc. drew me towards it more.
 
-You can head over to my [blog repo](https://github.com/maaz93/blog) to check out the code, if you want. I used the [gatsby-starter-lumen](https://github.com/alxshelepenok/gatsby-starter-lumen) starter to set it up.
+You can head over to my [blog repo](https://github.com/maazadeeb/blog) to check out the code, if you want. I used the [gatsby-starter-lumen](https://github.com/alxshelepenok/gatsby-starter-lumen) starter to set it up.
 
 ## Challenges
 
