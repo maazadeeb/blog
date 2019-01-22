@@ -28,8 +28,8 @@ module.exports = {
       name: "Maaz Syed Adeeb",
       email: "maaz.adeeb@gmail.com",
       telegram: "#",
-      twitter: "maaz93",
-      github: "maaz93",
+      twitter: "maazadeeb6",
+      github: "maazadeeb",
       rss: "/rss.xml",
       vk: "#",
       stackoverflow: "2950032/maaz-syed-adeeb"
