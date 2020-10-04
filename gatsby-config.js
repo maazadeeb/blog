@@ -13,16 +13,16 @@ module.exports = {
     menu: [
       {
         label: "Articles",
-        path: "/"
+        path: "/",
       },
       {
         label: "About me",
-        path: "/about/"
+        path: "/about/",
       } /* ,
       {
         label: "Contact me",
         path: "/contact/"
-      } */
+      } */,
     ],
     author: {
       name: "Maaz Syed Adeeb",
@@ -32,16 +32,17 @@ module.exports = {
       github: "maazadeeb",
       rss: "/rss.xml",
       vk: "#",
-      stackoverflow: "2950032/maaz-syed-adeeb"
-    }
+      stackoverflow: "2950032/maazadeeb",
+      linkedin: "maazadeeb",
+    },
   },
   plugins: [
     {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/pages`,
-        name: "pages"
-      }
+        name: "pages",
+      },
     },
     {
       resolve: "gatsby-plugin-feed",
@@ -60,13 +61,13 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) =>
-              allMarkdownRemark.edges.map(edge =>
+              allMarkdownRemark.edges.map((edge) =>
                 Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.frontmatter.description,
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.site_url + edge.node.fields.slug,
                   guid: site.siteMetadata.site_url + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }]
+                  custom_elements: [{ "content:encoded": edge.node.html }],
                 })
               ),
             query: `
@@ -94,10 +95,10 @@ module.exports = {
                 }
               }
             `,
-            output: "/rss.xml"
-          }
-        ]
-      }
+            output: "/rss.xml",
+          },
+        ],
+      },
     },
     {
       resolve: "gatsby-transformer-remark",
@@ -106,33 +107,33 @@ module.exports = {
           {
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 960
-            }
+              maxWidth: 960,
+            },
           },
           {
             resolve: "gatsby-remark-responsive-iframe",
-            options: { wrapperStyle: "margin-bottom: 1.0725rem" }
+            options: { wrapperStyle: "margin-bottom: 1.0725rem" },
           },
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-smartypants",
-          "gatsby-remark-external-links"
-        ]
-      }
+          "gatsby-remark-external-links",
+        ],
+      },
     },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {
       resolve: "gatsby-plugin-google-analytics",
-      options: { trackingId: "UA-105814760-1" }
+      options: { trackingId: "UA-105814760-1" },
     },
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Roboto:400,400i,500,700"]
-        }
-      }
+          families: ["Roboto:400,400i,500,700"],
+        },
+      },
     },
     {
       resolve: "gatsby-plugin-sitemap",
@@ -158,14 +159,14 @@ module.exports = {
           }`,
         output: "/sitemap.xml",
         serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map(edge => {
+          allSitePage.edges.map((edge) => {
             return {
               url: site.siteMetadata.url + edge.node.path,
               changefreq: "daily",
-              priority: 0.7
+              priority: 0.7,
             };
-          })
-      }
+          }),
+      },
     },
     {
       resolve: "gatsby-plugin-manifest",
@@ -176,8 +177,8 @@ module.exports = {
         background_color: "#5d93ff",
         theme_color: "#5d93ff",
         display: "standalone",
-        icon: "static/images/favicon.png" // This path is relative to the root of the site.
-      }
+        icon: "static/images/favicon.png", // This path is relative to the root of the site.
+      },
     },
     "gatsby-plugin-offline",
     "gatsby-plugin-catch-links",
@@ -207,16 +208,16 @@ module.exports = {
               "padding-right",
               "border-radius",
               "width",
-              "max-width"
+              "max-width",
             ],
             selectorBlackList: [],
             replace: true,
             mediaQuery: false,
-            minPixelValue: 0
-          })
-        ]
-      }
+            minPixelValue: 0,
+          }),
+        ],
+      },
     },
-    "gatsby-plugin-netlify"
-  ]
+    "gatsby-plugin-netlify",
+  ],
 };

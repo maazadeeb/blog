@@ -1,23 +1,35 @@
 import React from "react";
 import "./style.scss";
-import "../../assets/fonts/fontello-f69cba61/css/fontello.css";
+import "../../assets/fonts/fontello-8e616ab8/css/fontello.css";
 
 class Links extends React.Component {
   render() {
     const author = this.props.data;
     const links = {
+      linkedin: author.linkedin,
       telegram: author.telegram,
       twitter: author.twitter,
       github: author.github,
       vk: author.vk,
       rss: author.rss,
       email: author.email,
-      stackoverflow: author.stackoverflow
+      stackoverflow: author.stackoverflow,
     };
 
     return (
       <div className="links">
         <ul className="links__list">
+          <li className="links__list-item">
+            <a
+              href={`https://www.linkedin.com/in/${links.linkedin}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i className="icon-linkedin" />
+            </a>
+          </li>
           <li className="links__list-item">
             <a
               href={`https://www.twitter.com/${links.twitter}`}
