@@ -4,6 +4,6 @@
 [build.environment]
   YARN_VERSION = "1.3.2"
   YARN_FLAGS = "--no-ignore-optional"
-[redirects]
+[[redirects]]
   from = "/so"
   to = "https://stackoverflow.com/users/2950032/maazadeeb"
