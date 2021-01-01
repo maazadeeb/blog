@@ -62,7 +62,7 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) =>
-              allMarkdownRemark.edges.map((edge) =>
+              allMarkdownRemark.edges.map(edge =>
                 Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.frontmatter.description,
                   date: edge.node.frontmatter.date,
@@ -125,6 +125,10 @@ module.exports = {
           {
             resolve: "gatsby-remark-responsive-iframe",
             options: { wrapperStyle: "margin-bottom: 1.0725rem" },
+          },
+          {
+            resolve: `gatsby-remark-embed-snippet`,
+            options: {},
           },
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
