@@ -1010,6 +1010,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.12.5":
+  version "7.12.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
+  integrity sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/standalone@^7.10.2":
   version "7.11.4"
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.11.4.tgz#e25a0fa05e9373545a1a38ad4462acfbec7d8a87"
@@ -6487,6 +6494,19 @@ gatsby-core-utils@^1.3.18:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
+gatsby-core-utils@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.7.0.tgz#fb5b5181136b48b859b57e3a2adc84852e79b0ec"
+  integrity sha512-DYYkmlgpfkQBuc/vWEkSmp1xh7LGI00HA0AzH2U8AblrqAff3JBezeS3v8thkeuOm7FhlwkZGPNza+PIHYcwKA==
+  dependencies:
+    ci-info "2.0.0"
+    configstore "^5.0.1"
+    fs-extra "^8.1.0"
+    node-object-hash "^2.0.0"
+    proper-lockfile "^4.1.1"
+    tmp "^0.2.1"
+    xdg-basedir "^4.0.0"
+
 gatsby-design-tokens@^2.0.2:
   version "2.0.11"
   resolved "https://registry.yarnpkg.com/gatsby-design-tokens/-/gatsby-design-tokens-2.0.11.tgz#b0cf12abc283c73e13de3f610fbcec5fce3e7b48"
@@ -6815,6 +6835,16 @@ gatsby-remark-copy-linked-files@^2.0.7:
     probe-image-size "^4.1.1"
     unist-util-visit "^1.4.1"
 
+gatsby-remark-embed-snippet@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-embed-snippet/-/gatsby-remark-embed-snippet-4.7.0.tgz#a19b34df5f6e2d740bed7de4b9c3ee02fdd9f445"
+  integrity sha512-6AH/yRiwK1OTqnXrKAdsq9IM91lxhmAw5XRqLbJB5LyrB8NJbqg8iDnFQuTCBGAaKx4IQTNMAEfjw9CgvV3pRg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    normalize-path "^3.0.0"
+    parse-numeric-range "^0.0.2"
+    unist-util-map "^1.0.5"
+
 gatsby-remark-external-links@^0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/gatsby-remark-external-links/-/gatsby-remark-external-links-0.0.4.tgz#85b98c1e9dacfaa58085319648c904ff3cab42f0"
@@ -6842,12 +6872,12 @@ gatsby-remark-images@^3.0.1:
     unist-util-select "^1.5.0"
     unist-util-visit-parents "^2.1.2"
 
-gatsby-remark-prismjs@^3.1.2:
-  version "3.5.11"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-3.5.11.tgz#d5309f90411ba2fd3cb002a0accad509b7ae7591"
-  integrity sha512-AMtHZb+i7GAlRM3UINAhx+SN1aVLsIUcbEbD8d3zdBxGQTeM1cJTIJz2UjUzdCqujW9tgewaw9mE+u4SFuQtKA==
+gatsby-remark-prismjs@^3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-3.10.0.tgz#544e242c78516322466c0bfed0d0536304a59d4e"
+  integrity sha512-TKH4th2Nkb2g7KRqYWG86o7AnfA2jpwv2KE2ZrjsGxzAvKWZ/TNuJn+S9mKqtZr/pVvSlM+fS0pnckE1nNKONg==
   dependencies:
-    "@babel/runtime" "^7.10.3"
+    "@babel/runtime" "^7.12.5"
     parse-numeric-range "^0.0.2"
     unist-util-visit "^1.4.1"
 
@@ -6922,18 +6952,18 @@ gatsby-telemetry@^1.3.30:
     node-fetch "^2.6.0"
     uuid "^8.3.0"
 
-gatsby-transformer-remark@^2.1.15:
-  version "2.8.31"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.8.31.tgz#3e1f11c3a6181831aa700e58356cbbe0b2ec39e5"
-  integrity sha512-VyiJg/5l8tvS8srPKH7yDrRsI4nDWJlIXDzqpZW7IZ+01633MObaG/aVfAKFi/0hllHRP4BpBf4wxAeImYZMpw==
+gatsby-transformer-remark@^2.13.0:
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.13.0.tgz#a27b771571da181d74d873544e4da8fb884838c1"
+  integrity sha512-DdTCbvPvCq4gquee07+lFTozTz1IvLrU7TCnvycec5t0sbEtuWZ98nWiMFooyoWbbAI51oR0RRs3zKgohSZ5zw==
   dependencies:
-    "@babel/runtime" "^7.10.3"
+    "@babel/runtime" "^7.12.5"
     bluebird "^3.7.2"
-    gatsby-core-utils "^1.3.18"
+    gatsby-core-utils "^1.7.0"
     gray-matter "^4.0.2"
     hast-util-raw "^4.0.0"
     hast-util-to-html "^4.0.1"
-    lodash "^4.17.15"
+    lodash "^4.17.20"
     mdast-util-to-hast "^3.0.4"
     mdast-util-to-string "^1.1.0"
     mdast-util-toc "^5.0"
@@ -6942,7 +6972,7 @@ gatsby-transformer-remark@^2.1.15:
     remark-retext "^3.1.3"
     remark-stringify "6.0.4"
     retext-english "^3.0.4"
-    sanitize-html "^1.27.0"
+    sanitize-html "^1.27.5"
     underscore.string "^3.3.5"
     unified "^6.2.0"
     unist-util-remove-position "^1.1.4"
@@ -11793,10 +11823,10 @@ pretty-format@^25.5.0:
     ansi-styles "^4.0.0"
     react-is "^16.12.0"
 
-prismjs@^1.15.0:
-  version "1.21.0"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.21.0.tgz#36c086ec36b45319ec4218ee164c110f9fc015a3"
-  integrity sha512-uGdSIu1nk3kej2iZsLyDoJ7e9bnPzIgY0naW/HdknGj61zScaprVEVGHrPoXqI+M9sP0NDnTK2jpkvmldpuqDw==
+prismjs@^1.22.0:
+  version "1.22.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.22.0.tgz#73c3400afc58a823dd7eed023f8e1ce9fd8977fa"
+  integrity sha512-lLJ/Wt9yy0AiSYBf212kK3mM5L8ycwlyTlSxHBAneXLR0nzFMlZ5y7riFPF3E33zXOF2IH95xdY5jIyZbM9z/w==
   optionalDependencies:
     clipboard "^2.0.0"
 
@@ -12994,10 +13024,10 @@ safe-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sanitize-html@^1.27.0:
-  version "1.27.4"
-  resolved "https://registry.yarnpkg.com/sanitize-html/-/sanitize-html-1.27.4.tgz#3864e7562fc708cefabcb0d51bbacde3411504cb"
-  integrity sha512-VvY1hxVvMXzSos/LzqeBl9/KYu3mkEOtl5NMwz6jER318dSHDCig0AOjZOtnoCwAC3HMs9LhfWkPCmQGttb4ng==
+sanitize-html@^1.27.5:
+  version "1.27.5"
+  resolved "https://registry.yarnpkg.com/sanitize-html/-/sanitize-html-1.27.5.tgz#6c8149462adb23e360e1bb71cc0bae7f08c823c7"
+  integrity sha512-M4M5iXDAUEcZKLXkmk90zSYWEtk5NH3JmojQxKxV371fnMh+x9t1rqdmXaGoyEHw3z/X/8vnFhKjGL5xFGOJ3A==
   dependencies:
     htmlparser2 "^4.1.0"
     lodash "^4.17.15"
@@ -14813,6 +14843,13 @@ unist-util-is@^4.0.0:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/unist-util-is/-/unist-util-is-4.0.2.tgz#c7d1341188aa9ce5b3cff538958de9895f14a5de"
   integrity sha512-Ofx8uf6haexJwI1gxWMGg6I/dLnF2yE+KibhD3/diOqY2TinLcqHXCV6OI5gFVn3xQqDH+u0M625pfKwIwgBKQ==
+
+unist-util-map@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/unist-util-map/-/unist-util-map-1.0.5.tgz#701069b72e1d1cc02db265502a5e82b77c2eb8b7"
+  integrity sha512-dFil/AN6vqhnQWNCZk0GF/G3+Q5YwsB+PqjnzvpO2wzdRtUJ1E8PN+XRE/PRr/G3FzKjRTJU0haqE0Ekl+O3Ag==
+  dependencies:
+    object-assign "^4.0.1"
 
 unist-util-modify-children@^1.0.0:
   version "1.1.6"

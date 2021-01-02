@@ -40,8 +40,9 @@
     }
     & .gatsby-highlight {
       max-width: $layout-post-single-width;
-      margin-left: 15px;
-      margin-right: 15px;
+      // margin-left: 15px;
+      // margin-right: 15px;
+      box-sizing: border-box;
       @include margin-bottom(1);
     }
     & :not(div) {
