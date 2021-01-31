@@ -6,7 +6,7 @@ path: "/about"
 
 Hi!
 
-I'm Maaz Syed Adeeb. 🤓 I'm from India and currently purusing my Masters in Computer Science at University of California, Irvine. I also currently reside in Irvine as well. I have over 5 years of work experience as a professional software dev, building enterprise analytics software for SAP.
+I'm Maaz Syed Adeeb. 🤓 I'm from India and currently pursuing my Masters in Computer Science at University of California, Irvine. I also currently reside in Irvine as well. I have over 5 years of work experience as a professional software dev, building enterprise analytics software for SAP.
 
 I've been in love with computers and programming since I was a kid. I learned [Logo](<https://en.wikipedia.org/wiki/Logo_(programming_language)>) in fourth grade and was fascinated by the patterns that I could generate by using simple `for` loops. I've not stopped since then.
 
