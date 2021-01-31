@@ -8,7 +8,7 @@ category: "Programming"
 tags:
   - "Docker"
   - "Setup"
-description: Learn to setup a quick local machine learning environment on your machine, using docker
+description: Learn to setup a machine learning environment on your machine, using docker
 ---
 
 # Introduction
