@@ -1,10 +1,11 @@
-import { Link } from "gatsby";
+import { graphql, Link, StaticQuery } from "gatsby";
 import React from "react";
+import Img from "gatsby-image";
 import get from "lodash/get";
 import Menu from "../Menu";
 import Links from "../Links";
-import profilePic from "../../pages/photo.jpg";
 import "./style.scss";
+import ProfilePic from "../ProfilePic";
 
 class Sidebar extends React.Component {
   render() {
@@ -13,21 +14,16 @@ class Sidebar extends React.Component {
       author,
       subtitle,
       copyright,
-      menu
+      menu,
     } = this.props.data.site.siteMetadata;
+
     const isHomePage = get(location, "pathname", "/") === "/";
 
     /* eslint-disable jsx-a11y/img-redundant-alt */
     const authorBlock = (
       <div>
         <Link to="/">
-          <img
-            src={profilePic}
-            className="sidebar__author-photo"
-            width="75"
-            height="75"
-            alt={author.name}
-          />
+          <ProfilePic className="sidebar__author-photo" alt={author.name} />
         </Link>
         {isHomePage ? (
           <h1 className="sidebar__author-title">

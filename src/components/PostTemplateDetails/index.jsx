@@ -2,9 +2,9 @@ import { Link } from "gatsby";
 import React from "react";
 import format from "date-fns/format";
 import Disqus from "../Disqus/Disqus";
-import profilePic from "../../pages/photo.jpg";
 import { isDev } from "../../utils/flags";
 import "./style.scss";
+import ProfilePic from "../ProfilePic";
 
 class PostTemplateDetails extends React.Component {
   render() {
@@ -62,11 +62,8 @@ class PostTemplateDetails extends React.Component {
             {tagsBlock}
             <hr />
             <div className="post-single__footer-author-details">
-              <img
-                src={profilePic}
+              <ProfilePic
                 className="post-single__footer-author-details-photo"
-                width="75"
-                height="75"
                 alt={author.name}
               />
               <p className="post-single__footer-author-details-text">
