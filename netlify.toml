@@ -4,3 +4,15 @@
 [build.environment]
   YARN_VERSION = "1.3.2"
   YARN_FLAGS = "--no-ignore-optional"
+[[redirects]]
+  from = "/so"
+  to = "https://stackoverflow.com/users/2950032/maazadeeb"
+[[redirects]]
+  from = "/cv"
+  to = "https://drive.google.com/file/d/1k691G2bLkwjrrkIXzuUY9advthKDZLzj/view?usp=sharing"
+[[redirects]]
+  from = "/li"
+  to = "https://www.linkedin.com/in/maazadeeb/"
+[[redirects]]
+  from = "/gh"
+  to = "https://github.com/"
