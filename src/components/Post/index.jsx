@@ -9,7 +9,7 @@ class Post extends React.Component {
       title,
       date,
       category,
-      description
+      description,
     } = this.props.data.node.frontmatter;
     const { slug, categorySlug } = this.props.data.node.fields;
 
