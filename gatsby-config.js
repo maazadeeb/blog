@@ -139,9 +139,8 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: { trackingId: "UA-105814760-1" },

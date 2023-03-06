@@ -1,5 +1,5 @@
 import { StaticQuery, graphql } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
+import Img from "gatsby-image";
 import React, { Component } from "react";
 
 class ProfilePic extends Component {
@@ -10,16 +10,15 @@ class ProfilePic extends Component {
           query ProfilePicQuery {
             file(relativePath: { eq: "photo.jpg" }) {
               childImageSharp {
-                gatsbyImageData(width: 75, height: 75, layout: FIXED)
+                fixed(width: 75, height: 75) {
+                  ...GatsbyImageSharpFixed
+                }
               }
             }
           }
         `}
         render={data => (
-          <GatsbyImage
-            image={data.file.childImageSharp.gatsbyImageData}
-            {...this.props}
-          />
+          <Img fixed={data.file.childImageSharp.fixed} {...this.props} />
         )}
       ></StaticQuery>
     );

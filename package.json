@@ -30,7 +30,6 @@
     "gatsby-plugin-catch-links": "^3.x",
     "gatsby-plugin-feed": "^3.x",
     "gatsby-plugin-google-analytics": "^3.x",
-    "gatsby-plugin-image": "^3.x",
     "gatsby-plugin-manifest": "^3.x",
     "gatsby-plugin-netlify": "^3.x",
     "gatsby-plugin-offline": "^3.x",

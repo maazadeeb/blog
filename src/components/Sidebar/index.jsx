@@ -1,5 +1,6 @@
-import { Link } from "gatsby";
+import { graphql, Link, StaticQuery } from "gatsby";
 import React from "react";
+import Img from "gatsby-image";
 import get from "lodash/get";
 import Menu from "../Menu";
 import Links from "../Links";
