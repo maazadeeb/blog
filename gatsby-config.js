@@ -128,7 +128,9 @@ module.exports = {
           },
           {
             resolve: `gatsby-remark-embed-snippet`,
-            options: {},
+            options: {
+              directory: `${__dirname}`,
+            },
           },
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
