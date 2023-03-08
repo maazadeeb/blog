@@ -55,7 +55,7 @@ export const pageQuery = graphql`
           draft: { ne: true }
         }
       }
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { frontmatter: { date: DESC } }
     ) {
       edges {
         node {
