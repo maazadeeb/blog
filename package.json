@@ -26,10 +26,10 @@
   "dependencies": {
     "date-fns": "^2.29.3",
     "gatsby": "^5.0.0",
-    "gatsby-image": "^3.x",
     "gatsby-plugin-catch-links": "^5.7.0",
     "gatsby-plugin-feed": "^5.7.0",
     "gatsby-plugin-google-analytics": "^5.7.0",
+    "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-manifest": "^5.7.0",
     "gatsby-plugin-netlify": "^5.1.0",
     "gatsby-plugin-offline": "^6.7.0",
@@ -67,6 +67,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.5.1",
     "lost": "^9.0.1",
+    "postcss": "^8.0.0",
     "postcss-import": "^15.1.0",
     "postcss-pxtorem": "^6.0.0",
     "prettier": "^2.8.4"
