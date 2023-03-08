@@ -96,6 +96,7 @@ module.exports = {
                 }
               }
             `,
+            title: "RSS feed",
             output: "/rss.xml",
           },
         ],
