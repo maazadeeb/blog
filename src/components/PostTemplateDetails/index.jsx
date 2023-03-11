@@ -55,7 +55,10 @@ class PostTemplateDetails extends React.Component {
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
             <div className="post-single__date">
-              <em>Published {format(post.frontmatter.date, "D MMM YYYY")}</em>
+              <em>
+                Published{" "}
+                {format(new Date(post.frontmatter.date), "d MMM yyyy")}
+              </em>
             </div>
           </div>
           <div className="post-single__footer">

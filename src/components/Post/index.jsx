@@ -9,7 +9,7 @@ class Post extends React.Component {
       title,
       date,
       category,
-      description
+      description,
     } = this.props.data.node.frontmatter;
     const { slug, categorySlug } = this.props.data.node.fields;
 
@@ -18,9 +18,9 @@ class Post extends React.Component {
         <div className="post__meta">
           <time
             className="post__meta-time"
-            dateTime={format(new Date(date), "MMMM D, YYYY")}
+            dateTime={format(new Date(date), "MMMM d, yyyy")}
           >
-            {format(new Date(date), "MMMM YYYY")}
+            {format(new Date(date), "MMMM yyyy")}
           </time>
           <span className="post__meta-divider" />
           <span className="post__meta-category" key={categorySlug}>

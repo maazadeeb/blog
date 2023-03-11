@@ -3,6 +3,7 @@ const pxtorem = require("postcss-pxtorem");
 const postcssImport = require("postcss-import");
 
 module.exports = {
+  trailingSlash: "never",
   siteMetadata: {
     url: "https://maazadeeb.com",
     siteUrl: "https://maazadeeb.com",
@@ -140,8 +141,9 @@ module.exports = {
         ],
       },
     },
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: "gatsby-plugin-google-analytics",
       options: { trackingId: "UA-105814760-1" },
