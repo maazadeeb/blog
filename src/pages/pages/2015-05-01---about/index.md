@@ -6,7 +6,7 @@ path: "/about"
 
 Hi!
 
-I'm Maaz Syed Adeeb. 🤓 I'm from India and currently pursuing my Masters in Computer Science at University of California, Irvine. I also currently reside in Irvine as well. I have over 5 years of work experience as a professional software dev, building enterprise analytics software for SAP.
+I'm Maaz Syed Adeeb. 🤓 I live in San Jose, CA. I'm working as a Software Development Engineer 2 (SDE 2) at Amazon Web Services (AWS) in the RDS Aurora team. I work on the storage layer of Aurora, specifically in areas of disaster recovery, metadata management, and billing. I graduated from University of California, Irvine with a Masters in Computer Science in December 2021. I have over 5 years of work experience as a professional software dev, building enterprise analytics software for SAP.
 
 I've been in love with computers and programming since I was a kid. I learned [Logo](<https://en.wikipedia.org/wiki/Logo_(programming_language)>) in fourth grade and was fascinated by the patterns that I could generate by using simple `for` loops. I've not stopped since then.
 
